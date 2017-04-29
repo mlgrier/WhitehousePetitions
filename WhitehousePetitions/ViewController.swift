@@ -44,11 +44,19 @@ class ViewController: UITableViewController {
                     //we're ok to parse
                     
                     parse(json: json)
+                    
+                    return
+                    
+                    
                 }
+                }
+                
             }
-        }
         
-    }
+        showError()
+        
+        }
+    
     
     func parse(json: JSON) {
     
